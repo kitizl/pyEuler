@@ -21,7 +21,7 @@ def sort_names(names):
 name_handle = open("names.txt")
 name_list = [name[1:-1] for name in name_handle.read().split(",")]
 
-name_score = sum([i*value_name(x) for (i,x) in enumerate(sort_names(name_list))])
+name_score = sum([i+1*value_name(x) for (i,x) in enumerate(sort_names(name_list))])
 
 end_time = time.time()
 
